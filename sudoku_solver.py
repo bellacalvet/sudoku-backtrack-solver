@@ -68,7 +68,10 @@ def backtrack_solve():
                 return
     hasASolution = True
     print(np.array(grid))
-    input("More?") #Prompt user input for computing the next solution (if multiple solutions)
+    #Prompt user input for computing the next solution (if multiple solutions)
+    findMoreSolutions = input("Find more solutions (y/n)? ")
+    if findMoreSolutions ==  "n":
+        exit()
 
 #Check input grid is valid
 for x in range(9):
